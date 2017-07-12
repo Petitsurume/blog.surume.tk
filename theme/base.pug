@@ -1,0 +1,17 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width")
+        meta(name="google-site-verification", content="CujLvbH9qWfo-VaXhjrRwPaEeFhgB2zCDECRoIYPdv8")
+        if post
+            title #{post.title} - Surume's Blog
+        else
+            title Surume's Blog
+        link(rel="stylesheet", href="#{THEME_ASSET_DIR}/honoka/css/bootstrap.min.css")
+    body
+        nav.navbar.navbar-default
+            .container
+                .navbar-header
+                    a.navbar-brand(href=TOP_URL) Surume's Blog
+        block content
